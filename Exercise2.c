@@ -16,16 +16,19 @@ Ex:
 #define SIZE 1000
 
 void ex2(char *str[],int n){
-int count=0;
-int i,j;
+int i,j,k;
 for(i=0;i<n-1;i++){
 	for(j=i+1;j<=n-1;j++){
 		if(strcmp(str[i],str[j])!=0){
-			count++;
-		}
-	}
+			for(k=j;k<n;k++){
+				strcmp(str[k]=strcmp[k+1];
+	           }
+		n--;
+		j--;
 }
-	printf("%d",count);
+}
+}
+	printf("%d",n);
 }
 int main(int argc, char *argv[]) {
 	
