@@ -15,14 +15,25 @@ Ex:
 #include<limits.h>
 #define SIZE 1000
 
-void ex3(char s1[], char s2[]){
-	//your codes here
-}
+struct complex
+{
+      float real,imag;
+};
 
-int main(int argc, char *argv[]) {
-	char n1[] = "1+9i";
-    char n2[] = "8+7i";
-    ex3(n1,n2);
-		
+complex product_complex(complex z1,complex z2)
+{
+	complex z3;
+	z3.real=(z1.real*z2.real)-(z1.imag*z2.imag);
+	z3.imag=(z1.real*z2.imag)+(z2.real*z1.imag);
+	printf("%d+%di",z3.real,z3.imag);
+}
+int main(){
+	struct complex z1,z2;
+	z1.real=1;
+	z1.img=9;
+	z2.real=8;
+	z2.img=7;
+        complex(z1,z2);		
 	return 0;
 }
+
