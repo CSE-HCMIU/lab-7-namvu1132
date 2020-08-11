@@ -16,7 +16,7 @@ struct complex
       float imag;
 };
 
-int main(){
+int main(int argc, char *argv[]){
 	complex c1,c2,result;
 	c1.real=1;
 	c1.imag=9;
