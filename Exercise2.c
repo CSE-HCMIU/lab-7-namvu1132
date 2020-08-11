@@ -15,36 +15,21 @@ Ex:
 #include<limits.h>
 #define SIZE 1000
 
-void remove(char arr[], int n)
-{
-	
-	if(n<=1)
-	   return n;
-	char temp[n];
-	
-	
-	int i,j=0;
-	for(i=0;i<n-1;i++)
-		
-	if (arr[i] != arr[i+1])
-        temp[j++] = arr[i];
-   
-    
-        temp[j++] = arr[n-1];
-  
-     
-     for (i=0; i<j; i++)
-         arr[i] = temp[i];
-   
-     return j;
- }
-int main()
-{
-	char arr[]={"abc","abcd","abe","abdr"};
-	int n= (arr) / (arr[0]);
-	
-	n=remove(arr,n);
-	for(int i=0;i<n;i++){
-		printf("%d",arr[i]);
+void ex2(char *str[],int n){
+int count=0;
+int i,j;
+for(i=0;i<n-1;i++){
+	for(j=i+1;j<=n-1;j++){
+		if(strcmp(str[i],str[j])!=0){
+			count++
+		}
 	}
-         
+	printf("%d",count);
+}
+int main(int argc, char *argv[]) {
+	
+	char *str[]={"ab","abcd","ab","abdr"};
+    ex2(str,4);
+		
+	return 0;
+}
