@@ -9,11 +9,6 @@ Ex:
 |__________________________________________________________|
 */
 #include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<string.h>
-#include<limits.h>
-#define SIZE 1000
 
 struct complex
 {
@@ -34,7 +29,7 @@ int main(){
 	z1.img=9;
 	z2.real=8;
 	z2.img=7;
-        complex(z1,z2);		
+        product_complex(z1,z2);		
 	return 0;
 }
 
