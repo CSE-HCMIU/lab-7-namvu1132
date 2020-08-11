@@ -14,22 +14,19 @@ struct complex
 {
       float real;
       float imag;
-}z1,z2;
+};
 
-void product_complex(struct complex z1,struct complex z2)
-{
-	struct complex z3;
-	z3.real=(z1.real*z2.real)-(z1.imag*z2.imag);
-	z3.imag=(z1.real*z2.imag)+(z2.real*z1.imag);
-	printf("%d+%di",z3.real,z3.imag);
-}
 int main(){
-	struct complex z1,z2;
-	z1.real=1;
-	z1.img=9;
-	z2.real=8;
-	z2.img=7;
-        product_complex(z1,z2);		
+	complex c1,c2,result;
+	c1.real=1;
+	c1.imag=9;
+	c2.real=8;
+	c2.imag=7;
+	result.real=(c1.real*c2.real)-(c1.imag*c2.imag);
+	result.imag=(c1.real*c2.imag)+(c2.real*c1.imag);
+	printf("%.f+%.fi",result.real,result.imag);
 	return 0;
 }
+	
+
 
