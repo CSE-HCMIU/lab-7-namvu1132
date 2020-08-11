@@ -17,7 +17,9 @@ struct complex
 };
 
 int main(int argc, char *argv[]){
-	complex c1,c2,result;
+	struct complex c1;
+	struct complex c2;
+	struct complex result;
 	c1.real=1;
 	c1.imag=9;
 	c2.real=8;
