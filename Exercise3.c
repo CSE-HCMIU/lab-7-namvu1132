@@ -19,11 +19,11 @@ struct complex
 {
       float real;
       float imag;
-}z1,z2,z3;
+}z1,z2;
 
-void product_complex(complex z1,complex z2)
+void product_complex(struct complex z1,struct complex z2)
 {
-	complex z3;
+	struct complex z3;
 	z3.real=(z1.real*z2.real)-(z1.imag*z2.imag);
 	z3.imag=(z1.real*z2.imag)+(z2.real*z1.imag);
 	printf("%d+%di",z3.real,z3.imag);
