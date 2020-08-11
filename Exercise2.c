@@ -19,9 +19,9 @@ void ex2(char *str[],int n){
 int i,j,k;
 for(i=0;i<n-1;i++){
 	for(j=i+1;j<=n-1;j++){
-		if(strcmp(str[i],str[j])!=0){
+		if(strcmp(str[i],str[j])==0){
 			for(k=j;k<n;k++){
-				strcmp(str[k],str[k+1])=0;
+				strcmp(str[k],str[k+1])==0;
 	           }
 		n--;
 		j--;
