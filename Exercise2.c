@@ -31,8 +31,8 @@ void ex2(char *str[],int n){
 	       }		
 	      }	
              }
-	for(i=0; i<n; i++)
-	  return *str[i];
+        for(i=0; i<n; i++){
+		return *str[i];
         }
 
 int main(int argc, char *argv[]) {
