@@ -17,10 +17,11 @@ Ex:
 
 struct complex
 {
-      float real,imag;
-};
+      float real;
+      float imag;
+}z1,z2,z3;
 
-complex product_complex(complex z1,complex z2)
+void product_complex(complex z1,complex z2)
 {
 	complex z3;
 	z3.real=(z1.real*z2.real)-(z1.imag*z2.imag);
